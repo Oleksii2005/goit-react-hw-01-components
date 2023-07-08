@@ -1,6 +1,6 @@
 import user from 'user.json';
 import css from './Profile.module.css';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 const Profile = () => {
   return (
     <div className={css.profile}>
@@ -28,5 +28,14 @@ const Profile = () => {
     </div>
   );
 };
+
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  followers: PropTypes.number,
+  views: PropTypes.number,
+  likes: PropTypes.number,
+};
+
 export default Profile;
-// Profile.propTypes = {};
