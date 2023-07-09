@@ -1,7 +1,7 @@
 import user from 'user.json';
 import css from './Profile.module.css';
 import PropTypes from 'prop-types';
-const Profile = () => {
+export const Profile = () => {
   return (
     <div className={css.profile}>
       <div className={css.description}>
@@ -38,4 +38,4 @@ Profile.propTypes = {
   likes: PropTypes.number,
 };
 
-export default Profile;
+// export default Profile;

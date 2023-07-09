@@ -1,39 +1,58 @@
-// import data from '../../data.json';
-import PropTypes from 'prop-types';
-import css from './Statistics.module.css';
-const Statistics = props => {
-  return props.products.map(product => (
-    <section className={css.statistics}>
-      <h2 className={css.title}>Upload stats</h2>
-      <ul className={css.stat_list}>
-        <li key={product.id[0]} className={css.item}>
-          <span className="label">{product.label[0]}</span>
-          <span className="percentage">{product.percentage[1]}</span>
-        </li>
-        <li key={product.id[2]} className={css.item}>
-          <span className="label">{product.label[2]}</span>
-          <span className="percentage">{product.percentage[1]}</span>
-        </li>
-        <li key={product.id[4]} className={css.item}>
-          <span className="label">{product.label[4]}</span>
-          <span className="percentage">{product.percentage[1]}</span>
-        </li>
-        <li key={product.id[1]} className={css.item}>
-          <span className="label">{product.label[1]}</span>
-          <span className="percentage">{product.percentage[1]}</span>
-        </li>
+// import css from './Statistics.module.css';
+// import PropTypes from 'prop-types';
+export const Statistics = ({ title, stats }) => {
+  return (
+    <section className="statistics">
+      <h2 className="title">{title}</h2>
+      <ul className="stat-list">
+        {stats.map(({ id, label, percentage }) => (
+          <li className="item" key={id}>
+            <span className="label">{label}</span>
+            <span className="percentage">{percentage}%</span>
+          </li>
+        ))}
       </ul>
     </section>
-  ));
+  );
 };
-Statistics.propTypes = {
-  products: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
-      percentage: PropTypes.number.isRequired,
-    })
-  ),
-};
+// Statistics.propTypes = {
+//   products: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       id: PropTypes.string.isRequired,
+//       label: PropTypes.string.isRequired,
+//       percentage: PropTypes.number.isRequired,
+//     })
+//   ),
+// };
+// export default Statistics;
 
-export default Statistics;
+// import data from '../../data.json';
+
+// import css from './Statistics.module.css';
+// export const Statistics = () => {
+//   return (
+//     <section className={css.statistics}>
+//       <h2 className={css.title}>Upload stats</h2>
+//       <ul className={css.stat_list}>
+//         <li key={data.id[0]} className={css.item}>
+//           <span className="label">{data.label[0]}</span>
+//           <span className="percentage">{data.percentage[1]}</span>
+//         </li>
+//         <li key={data.id[2]} className={css.item}>
+//           <span className="label">{data.label[2]}</span>
+//           <span className="percentage">{data.percentage[1]}</span>
+//         </li>
+//         <li key={data.id[4]} className={css.item}>
+//           <span className="label">{data.label[4]}</span>
+//           <span className="percentage">{data.percentage[1]}</span>
+//         </li>
+//         <li key={data.id[1]} className={css.item}>
+//           <span className="label">{data.label[1]}</span>
+//           <span className="percentage">{data.percentage[1]}</span>
+//         </li>
+//       </ul>
+//     </section>
+//   );
+// };
+
+// export default Statistics;
