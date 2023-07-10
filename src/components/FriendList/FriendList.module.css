@@ -18,8 +18,21 @@
     padding: 10px;
 }
 
-.status {}
+.status {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+}
 
-.avatar {}
+.online {
+    background-color: green;
+}
 
-.name {}
+.offline {
+    background-color: red;
+}
+
+/* .avatar {}
+
+.name {} */
