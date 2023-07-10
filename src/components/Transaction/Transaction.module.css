@@ -1,0 +1,62 @@
+.transaction_history {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.main_title {
+    padding: 15px;
+    text-decoration: underline;
+}
+
+.main_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellowgreen;
+}
+
+.option_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.type {
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.amount {
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.currency {
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.amounts {
+    padding-right: 28px;
+}
+
+.first {
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.second {
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.third {
+    padding: 15px;
+    border: 1px solid black;
+
+}

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 export const Profile = () => {
   return (
     <div className={css.profile}>
+      <span className={css.main_title}>First task</span>
       <div className={css.description}>
         <img src={user.avatar} alt={user.username} className={css.avatar} />
         <p className={css.name}>{user.username}</p>

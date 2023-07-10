@@ -1,0 +1,25 @@
+.main_title {
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+.friend_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.item {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.status {}
+
+.avatar {}
+
+.name {}
